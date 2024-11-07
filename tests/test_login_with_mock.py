@@ -1,6 +1,10 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 import pytest
 from unittest.mock import Mock
-from src.login import login  # Import the login function from your module
+from login import login  # Import the login function from your module
 
 # def test_login_with_mock():
 #     """Test login with a mocked database."""
